@@ -1,6 +1,11 @@
 h1 {
     color: red;
 }
+
+img {
+    height: 350px;
+    width: 350px;
+}
 .gameContainer {
     display: flex;
     flex-direction: column;
@@ -10,6 +15,7 @@ h1 {
 }
 
 .questionsContainer {
+    display: none;
     margin: 10px;
     padding: 10px;
     width: auto;
@@ -21,7 +27,7 @@ h1 {
     border-color: black;
 }
 .choicesContainer {
-    display: grid;
+    display: none;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
 }

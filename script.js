@@ -1,5 +1,7 @@
 //Object of bank of questions and answers to pull from.
-const questions = [{
+
+
+let questions = [{
     questionNumber: 0,
     img: 'https://www.mathtutordvd.com/members/images/3639.gif',
     questionText: 'What Element is this?',
@@ -8,23 +10,27 @@ const questions = [{
         { choice: 'Helium', isCorrect: true},
         { choice: 'Phosporus', isCorrect: false},
         { choice: 'Sodium', isCorrect: false}
-    ]
+    ],
+    expectedAnswer: 1
 }]
-questionNumber = 0
+
+let questionNumber = 0
+let score = 0
+
+let question = document.querySelector('.js-questions');
+let questionImage = document.getElementById('js-image');
+let choice1 = document.querySelector('.js-choiceOne');
+let choice2 = document.querySelector('.js-choiceTwo');
+let choice3 = document.querySelector('.js-choiceThree');
+let choice4 = document.querySelector('.js-choiceFour');
+let choicesButtons = document.querySelector('.choicesContainer')
 
 //relevant constants and DOM elements needed for displaying questions and choices
 const startButton = document.querySelector('.js-start')
 
 
 //basic function for selecting questions from the questions object
-function questionSelector(questionNumber) {
-
-    const question = document.querySelector('.js-questions');
-    const questionImage = document.getElementById('js-image');
-    const choice1 = document.querySelector('.js-choiceOne');
-    const choice2 = document.querySelector('.js-choiceTwo');
-    const choice3 = document.querySelector('.js-choiceThree');
-    const choice4 = document.querySelector('.js-choiceFour');
+function questionSelector() {
 
     console.log(questionImage)
 
@@ -43,19 +49,36 @@ choice3.innerText = questions[questionNumber].answers[2].choice;
 choice4.innerText = questions[questionNumber].answers[3].choice;
 
 // sets an incorrect or correct value to each answer for the question.
-choice1.value = questions[questionNumber].answers[0].isCorrect;
-choice2.value = questions[questionNumber].answers[1].isCorrect;
-choice3.value = questions[questionNumber].answers[2].isCorrect;
-choice4.value = questions[questionNumber].answers[3].isCorrect;
+// choice1.value = questions[questionNumber].answers[0].isCorrect;
+// choice2.value = questions[questionNumber].answers[1].isCorrect;
+// choice3.value = questions[questionNumber].answers[2].isCorrect;
+// choice4.value = questions[questionNumber].answers[3].isCorrect;
 
 }
 
 
 //DOM event for start button to iterate first question.
+
+
+function submitAnswer(choice) {
+    let temp = questions[questionNumber]
+    if (choice == temp.answers[temp.expectedAnswer].choice) {
+        increaseScore()
+    }
+
+}
+
+function increaseScore() {
+    score++
+}
+
 startButton.addEventListener('click', () => {
 
-    questionSelector(0)
-    questionNumber++
+    questionSelector()
     startButton.style.display = 'none'
 })
 
+choicesButtons.addEventListener('click', (event) => {
+    submitAnswer(event.target.innerText)
+console.log(event.target)
+})

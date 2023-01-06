@@ -31,13 +31,566 @@ let questions = [
         img: 'https://upload.wikimedia.org/wikipedia/en/d/d4/Call_of_Duty_-_Modern_Warfare_Remastered.jpeg',
         questionText: 'What year was Call of Duty: Modern Warfare released?',
         answers: [
-            { choice: '2007', isCorrect: true},
-            { choice: '2006', isCorrect: false},
-            { choice: '2009', isCorrect: false},
-            { choice: '2010', isCorrect: false}
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
         ],
         expectedAnswer: 0
     },
+    {
+        questionNumber: 3,
+        img: 'https://www.greenpeace.org/static/planet4-international-stateless/2019/10/159e202d-gp02ul9.jpg',
+        questionText: 'Which of these is the largest Continent in the World?',
+        answers: [
+            { choice: 'North America', isCorrect: false},
+            { choice: 'Asia', isCorrect: true},
+            { choice: 'Russia', isCorrect: false},
+            { choice: 'Antartica', isCorrect: false}
+        ],
+        expectedAnswer: 1
+    },
+    {
+        questionNumber: 4,
+        img: '',
+        questionText: '',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 5,
+        img: '',
+        questionText: '',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 6,
+        img: '',
+        questionText: '',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 7,
+        img: '',
+        questionText: '',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+        {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    {
+        questionNumber: 8,
+        img: '',
+        questionText: '?',
+        answers: [
+            { choice: '', isCorrect: true},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false},
+            { choice: '', isCorrect: false}
+        ],
+        expectedAnswer: 0
+    },
+    
 ]
 
 let questionNumber = 0

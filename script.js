@@ -31,10 +31,10 @@ let questions = [
         img: 'https://upload.wikimedia.org/wikipedia/en/d/d4/Call_of_Duty_-_Modern_Warfare_Remastered.jpeg',
         questionText: 'What year was Call of Duty: Modern Warfare released?',
         answers: [
-            { choice: '', isCorrect: true},
-            { choice: '', isCorrect: false},
-            { choice: '', isCorrect: false},
-            { choice: '', isCorrect: false}
+            { choice: '2007', isCorrect: true},
+            { choice: '2010', isCorrect: false},
+            { choice: '2009', isCorrect: false},
+            { choice: '2011', isCorrect: false}
         ],
         expectedAnswer: 0
     },
@@ -52,61 +52,61 @@ let questions = [
     },
     {
         questionNumber: 4,
-        img: '',
-        questionText: '',
+        img: 'https://gisgeography.com/wp-content/uploads/2017/11/North-America-Map-1265x1255.png',
+        questionText: 'In what year was North America discovered?',
         answers: [
-            { choice: '', isCorrect: true},
-            { choice: '', isCorrect: false},
-            { choice: '', isCorrect: false},
-            { choice: '', isCorrect: false}
+            { choice: '1607', isCorrect: false},
+            { choice: '1502', isCorrect: false},
+            { choice: '1492', isCorrect: true},
+            { choice: '1507', isCorrect: false}
         ],
-        expectedAnswer: 0
+        expectedAnswer: 2
     },
     {
         questionNumber: 5,
-        img: '',
-        questionText: '',
+        img: 'https://media.bizj.us/view/img/11812205/generalassembly-dc1*1600xx2048-1152-0-130.jpg',
+        questionText: 'What year was General Assembly: Coding Bootcamp first estabilshed?',
         answers: [
-            { choice: '', isCorrect: true},
-            { choice: '', isCorrect: false},
-            { choice: '', isCorrect: false},
-            { choice: '', isCorrect: false}
+            { choice: '2012', isCorrect: false},
+            { choice: '2011', isCorrect: true},
+            { choice: '2009', isCorrect: false},
+            { choice: '2013', isCorrect: false}
         ],
-        expectedAnswer: 0
+        expectedAnswer: 1
     },
     {
         questionNumber: 6,
-        img: '',
-        questionText: '',
+        img: 'https://cdn.thecollector.com/wp-content/uploads/2021/12/great-wall-china-national-geographic.jpg?width=1400&quality=55',
+        questionText: 'Where is this located?',
         answers: [
-            { choice: '', isCorrect: true},
-            { choice: '', isCorrect: false},
-            { choice: '', isCorrect: false},
-            { choice: '', isCorrect: false}
+            { choice: 'Russia', isCorrect: false},
+            { choice: 'Thailand', isCorrect: false},
+            { choice: 'Taiwan', isCorrect: false},
+            { choice: 'China', isCorrect: true}
         ],
-        expectedAnswer: 0
+        expectedAnswer: 3
     },
     {
         questionNumber: 7,
-        img: '',
-        questionText: '',
+        img: 'https://photos5.appleinsider.com/gallery/product_pages/189-hero.jpg',
+        questionText: 'Who is this person?',
         answers: [
-            { choice: '', isCorrect: true},
-            { choice: '', isCorrect: false},
-            { choice: '', isCorrect: false},
-            { choice: '', isCorrect: false}
+            { choice: 'Elon Musk', isCorrect: false},
+            { choice: 'Steve Jobs', isCorrect: true},
+            { choice: 'Sigmund Freud', isCorrect: false},
+            { choice: 'Joe Biden', isCorrect: false}
         ],
-        expectedAnswer: 0
+        expectedAnswer: 1
     },
     {
         questionNumber: 8,
-        img: '',
-        questionText: '?',
+        img: 'https://upload.wikimedia.org/wikipedia/commons/a/a4/Map_of_USA_with_state_and_territory_names_2.png',
+        questionText: 'What was the 50th state added to the United States?',
         answers: [
-            { choice: '', isCorrect: true},
-            { choice: '', isCorrect: false},
-            { choice: '', isCorrect: false},
-            { choice: '', isCorrect: false}
+            { choice: 'Alaska', isCorrect: false},
+            { choice: 'West Virginia', isCorrect: false},
+            { choice: 'North Dakota', isCorrect: false},
+            { choice: 'Hawaii', isCorrect: true}
         ],
         expectedAnswer: 0
     },
@@ -646,6 +646,10 @@ function submitAnswer(choice) {
     let temp = questions[questionNumber]
     if (choice == temp.answers[temp.expectedAnswer].choice) {
         increaseScore()
+        questionNumber++
+        questionSelector()
+    }
+    else {
         questionNumber++
         questionSelector()
     }

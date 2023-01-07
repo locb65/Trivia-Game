@@ -1,13 +1,12 @@
 body {
+    background-image: url(./images/triviaBackground.jpg);
+    background-position: center center;
+    background-size: cover;
     display: flex;
     margin: auto;
     flex-direction: column;
     justify-content: center;
     align-content: center;
-
-}
-
-h1 {
     color: red;
 }
 

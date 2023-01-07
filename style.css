@@ -132,3 +132,25 @@ img {
     background-color: rgb(140, 118, 236);
     
 }
+
+.restartButton {
+    display: none;
+    font-size: 60px;
+    width: 20rem;
+    height: 5rem;
+    background-color: rgb(79, 91, 89);
+    border-radius: 15%;
+    color: rgb(19, 174, 169);
+    text-shadow: 
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(98, 199, 227),
+    0 0 82px rgb(98, 199, 227),
+    0 0 92px rgb(98, 199, 227),
+    0 0 102px rgb(98, 199, 227),
+    0 0 151px rgb(98, 199, 227);
+    text-align: center;
+    opacity: 0.9;
+
+}

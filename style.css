@@ -18,6 +18,15 @@ body {
     background-attachment: fixed;
     width: 100%;
     color: rgb(19, 174, 169);
+    text-shadow: 
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(98, 199, 227),
+    0 0 82px rgb(98, 199, 227),
+    0 0 92px rgb(98, 199, 227),
+    0 0 102px rgb(98, 199, 227),
+    0 0 151px rgb(98, 199, 227);
     margin-top: auto;
 }
 
@@ -36,6 +45,16 @@ h1 {
 img {
     height: 350px;
     width: 450;
+    box-shadow: 
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(98, 199, 227),
+    0 0 82px rgb(98, 199, 227),
+    0 0 92px rgb(98, 199, 227),
+    0 0 102px rgb(98, 199, 227),
+    0 0 151px rgb(98, 199, 227);
+    opacity: 0.9;
 }
 
 .startButton {
@@ -45,7 +64,17 @@ img {
     background-color: rgb(79, 91, 89);
     border-radius: 15%;
     color: rgb(19, 174, 169);
+    text-shadow: 
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(98, 199, 227),
+    0 0 82px rgb(98, 199, 227),
+    0 0 92px rgb(98, 199, 227),
+    0 0 102px rgb(98, 199, 227),
+    0 0 151px rgb(98, 199, 227);
     text-align: center;
+    opacity: 0.9;
 }
 .gameContainer {
     display: flex;
@@ -67,13 +96,14 @@ img {
     text-align: center;
     border: 5px;
     border-color: black;
+    opacity: 0.9;
     
 }
 .choicesContainer {
     display: none;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
-    width: 800px;
+    width: 700px;
 }
 .choicesButton {
     display: flex;
@@ -87,9 +117,18 @@ img {
     border-radius: 15%;
     color: rgb(19, 174, 169);
     text-align: center;
-    background-blend-mode: luminosity;
+    opacity: 0.9 ;
+    text-shadow: 
+    0 0 7px #fff,
+    0 0 10px #fff,
+    0 0 21px #fff,
+    0 0 42px rgb(98, 199, 227),
+    0 0 82px rgb(98, 199, 227),
+    0 0 92px rgb(98, 199, 227),
+    0 0 102px rgb(98, 199, 227),
+    0 0 151px rgb(98, 199, 227);
 }
 .choicesButton:hover {
-    background-color: aquamarine;
+    background-color: rgb(140, 118, 236);
     
 }

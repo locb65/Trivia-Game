@@ -146,8 +146,9 @@ let choice1 = document.querySelector('.js-choiceOne');
 let choice2 = document.querySelector('.js-choiceTwo');
 let choice3 = document.querySelector('.js-choiceThree');
 let choice4 = document.querySelector('.js-choiceFour');
-let choicesButtons = document.querySelector('.choicesContainer')
+let choicesButtons = document.querySelectorAll('.choicesButton')
 let intro = document.querySelector('.intro')
+let choicesContainer = document.querySelector('.choicesContainer')
 
 
 
@@ -175,12 +176,6 @@ choice2.innerText = questions[questionNumber].answers[1].choice;
 choice3.innerText = questions[questionNumber].answers[2].choice;
 choice4.innerText = questions[questionNumber].answers[3].choice;
 
-// sets an incorrect or correct value to each answer for the question.
-// choice1.value = questions[questionNumber].answers[0].isCorrect;
-// choice2.value = questions[questionNumber].answers[1].isCorrect;
-// choice3.value = questions[questionNumber].answers[2].isCorrect;
-// choice4.value = questions[questionNumber].answers[3].isCorrect;
-
 }
 
 
@@ -197,7 +192,10 @@ function submitAnswer(choice) {
     else {
         questionNumber++
         questionSelector()
-    }
+    };
+    if (question[questionNumber] >= 9){
+        question = `All Questions have been answered. You scored ${score} out of 10`
+        }
 
 }
 
@@ -210,14 +208,18 @@ startButton.addEventListener('click', () => {
     questionSelector()
     startButton.style.display = 'none'
     intro.style.display = 'none'
-    choicesButtons.style.display = 'grid'
+    choicesContainer.style.display = 'grid'
     question.style.display = 'grid'
+
+
     
 
 })
 
-choicesButtons.addEventListener('click', (event) => {
+choicesButtons.forEach( (i) => {
+    i.addEventListener('click', (event) => {
     submitAnswer(event.target.innerText)
 console.log(event.target)
+})
 })
 

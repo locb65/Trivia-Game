@@ -149,6 +149,7 @@ let choice4 = document.querySelector('.js-choiceFour');
 let choicesButtons = document.querySelectorAll('.choicesButton')
 let intro = document.querySelector('.intro')
 let choicesContainer = document.querySelector('.choicesContainer')
+let restart = document.querySelector('.js-restart')
 
 
 
@@ -159,23 +160,21 @@ const startButton = document.querySelector('.js-start')
 
 //basic function for selecting questions from the questions object
 function questionSelector() {
+    if (questionNumber < questions.length) {
 
-    console.log(questionImage)
+        //sets the image associated with each question
+        questionImage.src = questions[questionNumber].img;
 
-console.log('helloworld')
+        //prints the question by its question number attribute.
+        question.innerText = questions[questionNumber].questionText;
 
-//sets the image associated with each question
-questionImage.src = questions[questionNumber].img;
+        //sets the answers to option buttons in HTML
+        choice1.innerText = questions[questionNumber].answers[0].choice;
+        choice2.innerText = questions[questionNumber].answers[1].choice;
+        choice3.innerText = questions[questionNumber].answers[2].choice;
+        choice4.innerText = questions[questionNumber].answers[3].choice;
 
-//prints the question by its question number attribute.
-question.innerText = questions[questionNumber].questionText;
-
-//sets the answers to option buttons in HTML
-choice1.innerText = questions[questionNumber].answers[0].choice;
-choice2.innerText = questions[questionNumber].answers[1].choice;
-choice3.innerText = questions[questionNumber].answers[2].choice;
-choice4.innerText = questions[questionNumber].answers[3].choice;
-
+        }
 }
 
 
@@ -193,8 +192,11 @@ function submitAnswer(choice) {
         questionNumber++
         questionSelector()
     };
-    if (question[questionNumber] >= 9){
-        question = `All Questions have been answered. You scored ${score} out of 10`
+    if (questionNumber > 9){
+        question.innerText = `All Questions have been answered. \n You scored ${score} out of 10`
+        choicesContainer.style.display = 'none'
+        questionImage.style.display = 'none'
+        restart.style.display = 'grid'
         }
 
 }

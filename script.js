@@ -212,6 +212,7 @@ startButton.addEventListener('click', () => {
     intro.style.display = 'none'
     choicesContainer.style.display = 'grid'
     question.style.display = 'grid'
+    questionImage.style.display = 'grid'
 
 
     
@@ -223,5 +224,15 @@ choicesButtons.forEach( (i) => {
     submitAnswer(event.target.innerText)
 console.log(event.target)
 })
+})
+
+restart.addEventListener('click', () => {
+    score = 0
+    intro.style.display = 'grid'
+    startButton.style.display = 'grid'
+    restart.style.display = 'none'
+    questionNumber = 0
+    question.style.display = 'none'
+
 })
 

@@ -1,25 +1,59 @@
+html, body {
+    height: 100%;
+    /* background-image: url(./images/triviaBackground.jpg);
+    background-position: center center;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed; */
+}
+
+html{
+    margin: auto;
+}
 body {
     background-image: url(./images/triviaBackground.jpg);
     background-position: center center;
-    background-size: cover;
-    display: flex;
-    margin: auto;
-    flex-direction: column;
-    justify-content: center;
-    align-content: center;
-    color: red;
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    width: 100%;
+    color: rgb(19, 174, 169);
+    margin-top: auto;
 }
+
+.intro {
+    font-size: xx-large;
+    max-width: 1000px;
+    text-align: center ;
+}
+h1 {
+    text-align: center;
+    font-weight: bolder;
+    font-size: 96px;
+}
+
 
 img {
     height: 350px;
     width: 450;
+}
+
+.startButton {
+    font-size: 60px;
+    width: 20rem;
+    height: 5rem;
+    background-color: rgb(79, 91, 89);
+    border-radius: 15%;
+    color: rgb(19, 174, 169);
+    text-align: center;
 }
 .gameContainer {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: auto;
+    height: 100%;
+    margin: auto;
 }
 
 .questionsContainer {
@@ -28,21 +62,32 @@ img {
     padding: 10px;
     width: auto;
     height: auto;
-    font-size: x-large;
+    font-size: 50px;
     font-weight: bolder;
     text-align: center;
     border: 5px;
     border-color: black;
+    
 }
 .choicesContainer {
     display: none;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: repeat(2, 1fr);
+    width: 800px;
 }
 .choicesButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
     border-radius: 25%;
-    padding: 10px;
-    margin: 10px;
+    padding: 5%;
+    margin: 5%;
+    font-size: 40px;
+    background-color: rgb(79, 91, 89);
+    border-radius: 15%;
+    color: rgb(19, 174, 169);
+    text-align: center;
+    background-blend-mode: luminosity;
 }
 .choicesButton:hover {
     background-color: aquamarine;

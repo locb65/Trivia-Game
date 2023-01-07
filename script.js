@@ -214,9 +214,6 @@ startButton.addEventListener('click', () => {
     question.style.display = 'grid'
     questionImage.style.display = 'grid'
 
-
-    
-
 })
 
 choicesButtons.forEach( (i) => {

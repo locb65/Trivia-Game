@@ -41,8 +41,8 @@ h1 {
 }
 
 img {
+    display: none;
     height: 350px;
-    width: 450;
     box-shadow: 
     0 0 7px #fff,
     0 0 10px #fff,
@@ -165,4 +165,64 @@ button {
     0 0 151px rgb(98, 199, 227);
     text-align: center;
     
+}
+
+@media (max-width: 400px) {
+    body {
+        background-attachment: cover;
+    }
+    img {
+        height: 175px;
+        width: 175px;
+    }
+    h1 {
+        font-size: 30px;
+        max-width: 350px;
+        line-height: 1rem;
+    }
+    .intro {
+        font-size: 14px;
+        max-width: 250px;
+    }
+
+    .startButton {
+        max-width: 10rem;
+        max-height: 2rem;
+        font-size: 24px;
+    }
+    .questionsContainer {
+        font-size: 30px;
+    }
+
+    .choicesContainer {
+        display: none;
+        grid-template-columns: repeat(1, 0.25fr);
+        grid-template-rows: repeat(4, 0.25fr);
+        width: 100px;
+        margin: 7%;
+        padding-top: 20px;
+        padding-right: 100px;
+
+    }
+    .choicesButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-wrap: wrap;
+        margin: 3%;
+        padding: 2%;
+        width: 200px;
+        font-size: 18px;
+        text-shadow: 
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 25px rgb(98, 199, 227),
+        0 0 30px rgb(98, 199, 227),
+        0 0 40px rgb(98, 199, 227),
+        0 0 50px rgb(98, 199, 227),
+        0 0 60px rgb(98, 199, 227);
+        /* margin: 0 110px 0 0;  */
+
+    }
 }

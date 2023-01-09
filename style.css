@@ -122,6 +122,7 @@ button {
     display: flex;
     align-items: center;
     justify-content: center;
+    flex-wrap: wrap;
     border-radius: 25%;
     padding: 7%;
     margin: 7%;
@@ -164,22 +165,24 @@ button {
     0 0 102px rgb(98, 199, 227),
     0 0 151px rgb(98, 199, 227);
     text-align: center;
+    opacity: 0.9;
     
 }
 
 @media (max-width: 400px) {
-    body {
-        background-attachment: cover;
-    }
     img {
-        height: 175px;
-        width: 175px;
+        height: 160px;
+        max-width: 175px;
+        margin-top: 100px;
+        margin-bottom: 25px;
     }
+
     h1 {
         font-size: 30px;
         max-width: 350px;
         line-height: 1rem;
     }
+
     .intro {
         font-size: 14px;
         max-width: 250px;
@@ -190,29 +193,35 @@ button {
         max-height: 2rem;
         font-size: 24px;
     }
+
     .questionsContainer {
-        font-size: 30px;
+        font-size: 24px;
+        max-width: 250px;
+        max-height: 250px;
+        padding-top: 50px;
+        margin: 25px 0 25px 0;
     }
 
     .choicesContainer {
         display: none;
         grid-template-columns: repeat(1, 0.25fr);
         grid-template-rows: repeat(4, 0.25fr);
-        width: 100px;
+        max-width: 95px;
         margin: 7%;
         padding-top: 20px;
         padding-right: 100px;
-
+        max-height: 350px;
     }
+
     .choicesButton {
         display: flex;
         justify-content: center;
         align-items: center;
         flex-wrap: wrap;
-        margin: 3%;
-        padding: 2%;
-        width: 200px;
-        font-size: 18px;
+        margin: 4%;
+        padding: 3%;
+        width: 180px;
+        font-size: 16px;
         text-shadow: 
         0 0 7px #fff,
         0 0 10px #fff,
@@ -222,7 +231,84 @@ button {
         0 0 40px rgb(98, 199, 227),
         0 0 50px rgb(98, 199, 227),
         0 0 60px rgb(98, 199, 227);
-        /* margin: 0 110px 0 0;  */
+    }
 
+    .restartButton {
+        max-width: 10rem;
+        max-height: 2rem;
+        font-size: 24px;
+        line-height: 1rem;
+        opacity: 0.9;
+        text-align: center;
+    }
+}
+
+@media (max-width: 700px) and (min-width: 401px) {
+    img {
+        height: 200px;
+        max-width: 225px;
+        margin-top: 50px;
+        margin-left: 10px;
+    }
+
+    h1 {
+        font-size: 60px;
+        max-width: 600px;
+        line-height: 1rem;
+
+    }
+
+    .intro {
+        font-size: 24px;
+        max-width: 500px;
+    }
+
+    .startButton {
+        max-width: 15rem;
+        max-height: 3rem;
+        font-size: 32px;
+    }
+
+    .questionsContainer {
+        font-size: 36px;
+        max-width: 500px;
+        max-height: 500px;
+        padding-top: 75px;
+        margin: 25px 0 25px 0;
+    }
+
+    .choicesContainer {
+        grid-template-columns: repeat(1, 0.25fr);
+        grid-template-rows: repeat(4, 0.25fr);
+        max-width: 250px;
+        margin: 7%;
+        padding-right: 5px;
+        max-height: 350px;
+
+    }
+
+    .choicesButton {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 4%;
+        padding: 3%;
+        width: 240px;
+        font-size: 22px;
+        text-shadow: 
+        0 0 7px #fff,
+        0 0 10px #fff,
+        0 0 21px #fff,
+        0 0 25px rgb(98, 199, 227),
+        0 0 30px rgb(98, 199, 227),
+        0 0 40px rgb(98, 199, 227),
+        0 0 50px rgb(98, 199, 227),
+        0 0 60px rgb(98, 199, 227);
+    }
+
+    .restartButton {
+        max-width: 15rem;
+        max-height: 3rem;
+        font-size: 32px;
     }
 }

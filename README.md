@@ -17,7 +17,7 @@ The game logic follows these steps:
 
 The techniques used are HTML, CSS, and Javascript. 
 DOM techniques were used to make the trivia game interactive with the buttons.
-Object oriented programming was used to develop the hard coded question bank to pull from the bank.
+Object oriented programming was used to develop the hard coded question bank and functions were invoked with each button click to iterate from from the bank.
 
 ### Possible future additions
 

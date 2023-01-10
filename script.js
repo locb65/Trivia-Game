@@ -108,7 +108,7 @@ let questions = [
             { choice: 'North Dakota', isCorrect: false},
             { choice: 'Hawaii', isCorrect: true}
         ],
-        expectedAnswer: 0
+        expectedAnswer: 4
     },
     {
         questionNumber: 9,
